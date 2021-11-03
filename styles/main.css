@@ -1,0 +1,104 @@
+body {
+  background: #d4f0bb;
+  color: #000;
+  font-family: 'Zen Kaku Gothic Antique', 'arial', sans-serif;
+  margin: 4rem;
+  /* note, this will not work for all page layouts */
+}
+
+h1, h2 {
+  font-family: 'Lora', 'Times', serif;
+}
+
+/* contains 4 divs */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding: 0;
+}
+
+/* divs containing BOTH image and a text div */
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  width: 170px;
+  height: 500px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 5px;
+ border-style: outset;
+  cursor: pointer;
+
+  /* setup for bg images */
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* background images for each ID */
+#swimming {
+  background-image: url("../images/swimming.jpg");
+
+}
+
+#drinking {
+ background-image: url("../images/drinking.jpg");
+}
+
+#resting {
+  background-image: url("../images/resting.jpg");
+}
+
+/* div containing only text */
+.text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.disappear {
+  max-height: 0 !important;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+
+.appear {
+  max-height: 100%;
+  transition: max-height 0.4s ease-in;
+  overflow: scroll;
+}
+
+#swimmingFacts {
+  background: #f5987d;
+}
+
+#drinkingFacts {
+  background: #f5987d;
+}
+
+#restingFacts {
+  background: #f5987d;
+}
+
+
+
+a:link {
+    color:#691F5F
+}
+
+a:hover {
+     color:#69005B
+}
