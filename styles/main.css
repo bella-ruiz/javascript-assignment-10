@@ -104,10 +104,3 @@ a:link {
 a:hover {
      color:#69005B
 }
-/* media queries below - only 1 is needed */
-@media screen and (max-width: 600px) {
-   #container {
-    display: flex;
-    margin: 0 auto;
-
-}
