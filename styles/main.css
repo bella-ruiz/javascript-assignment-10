@@ -30,7 +30,6 @@ section {
   flex-direction: column;
   flex: 1 2 auto;
   align-items: center;
-  justify-content: space-between;
   margin: 0 10px;
   width: 200px;
   height: 500px;
@@ -104,4 +103,11 @@ a:link {
 
 a:hover {
      color:#69005B
+}
+/* media queries below - only 1 is needed */
+@media screen and (max-width: 600px) {
+   #container {
+    display: flex;
+    margin: 0 auto;
+
 }
